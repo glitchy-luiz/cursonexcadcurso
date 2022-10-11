@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastrar curso</title>
+    <script>
+        var line = 1;
+function addInput(divName) {
+  var newdiv = document.createElement('div');
+  newdiv.innerHTML += '<label name="label" class="form-label"'+line +'_1" id="label'+line +'_1"> Texto';
+  newdiv.innerHTML += '<input type="text" class="form-control" name="text'+line +'_2" id="text'+line +'_2">';
+  document.getElementById(divName).appendChild(newdiv);
+  line++;
+}
+
+addInput('lines');
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="interface.html">← voltar</a>
+    </nav>
+    <h1>Cadastre seu curso</h1>
+    <div class="formcurso">
+        <div class="miniform1">
+            <div class="mb-3">
+                <label for="" class="form-label">Título</label>
+                <input type="text" class="form-control" id="">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Link</label>
+                <input type="text" class="form-control" id="" placeholder="Coloque links para seu site, redes sociais, etc.">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Descrição 1</label>
+                <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+            </div>
+            <!-- <div class="mb-3">
+                <label for="" class="form-label">Subtítulo</label>
+                <input type="text" class="form-control" id="" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Descrição 2</label>
+                <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Subtítulo 2</label>
+                <input type="text" class="form-control" id="" placeholder="">
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Descrição 3</label>
+                <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="" class="form-label">Link 2</label>
+                <input type="text" class="form-control" id="" placeholder="Coloque links para seu site, redes sociais, etc.">
+            </div> -->
+            
+            <form id="myForm">
+                <div id="lines"></div>
+                <select name="disciplina" id="floatingSelect" class="form-control">
+                    <option value="0">Adicionar...</option>
+                    <option value="1" onclick="addInput('lines')">Subtítulo</option>
+                    <option value="2">Descrição</option>
+                    <option value="3">Link</option>
+                    <option value="4">Imagem</option>
+                </select>
+              </form>
+        </div>
+        <div class="miniform2">
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Título</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

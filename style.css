@@ -1,0 +1,27 @@
+a{
+    text-decoration: none;
+    text-decoration-color: #6823F7;
+}
+nav{
+    padding: 25px;
+    padding-bottom: 20px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+.formcurso{
+    display: flex;
+    justify-content: center;
+}
+.miniform1{
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 40%;
+}
+.miniform2{
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
